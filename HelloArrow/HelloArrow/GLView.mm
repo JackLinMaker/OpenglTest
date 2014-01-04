@@ -29,25 +29,11 @@
         
         m_renderingEngine = CreateRenderer1();
         
-        //GLuint frameBuffer, renderBuffer;
-        //glGenFramebuffersOES(1, &frameBuffer);
-        //glGenRenderbuffersOES(1, &renderBuffer);
-        
-        //glBindFramebufferOES(GL_FRAMEBUFFER_OES, frameBuffer);
-        //glBindRenderbufferOES(GL_RENDERBUFFER_OES, renderBuffer);
-        
         [m_context renderbufferStorage:GL_RENDERBUFFER fromDrawable:eaglLayer];
-        
-        //glFramebufferRenderbufferOES(GL_FRAMEBUFFER_OES, GL_COLOR_ATTACHMENT0_OES, GL_RENDERBUFFER_OES, renderBuffer);
-        
-        //glViewport(0, 0, CGRectGetWidth(frame), CGRectGetHeight(frame));
         
         m_renderingEngine->Initialize(CGRectGetWidth(frame), CGRectGetHeight(frame));
         
         [self drawView:nil];
-        
-        //[self drawView];
-        
         m_timestamp = CACurrentMediaTime();
         
         CADisplayLink* displayLink;
@@ -57,8 +43,9 @@
         
         [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
         
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didRotate) name:UIDeviceOrientationDidChangeNotification object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didRotate:) name:UIDeviceOrientationDidChangeNotification object:nil];
     }
+    
     return self;
 }
 
@@ -87,13 +74,5 @@
     [m_context presentRenderbuffer:GL_RENDERBUFFER];
 }
 
-- (void) dealloc
-{
-    if([EAGLContext currentContext] == m_context)
-        [EAGLContext setCurrentContext:nil];
-    
-    //[m_context release];
-    //[super dealloc];
-}
 
 @end

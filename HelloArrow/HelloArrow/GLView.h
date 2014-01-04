@@ -6,7 +6,7 @@
 //  Copyright (c) 2013年 JackLinMaker. All rights reserved.
 //
 
-#import "IRenderingEngine.h"
+#import "IRenderingEngine.hpp"
 #import <OpenGLES/EAGL.h>
 #import <QuartzCore/QuartzCore.h>
 

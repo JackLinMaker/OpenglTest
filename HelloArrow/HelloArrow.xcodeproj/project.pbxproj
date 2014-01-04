@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18F4E57A18786C5F0097622E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F4E57918786C5F0097622E /* QuartzCore.framework */; };
+		18F4E57C18786C650097622E /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F4E57B18786C650097622E /* OpenGLES.framework */; };
+		18F4E57F18786DB40097622E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F4E57E18786DB40097622E /* ViewController.m */; };
 		E7166ACA18783FAE0055E18B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7166AC918783FAE0055E18B /* Foundation.framework */; };
 		E7166ACC18783FAE0055E18B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7166ACB18783FAE0055E18B /* CoreGraphics.framework */; };
 		E7166ACE18783FAF0055E18B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7166ACD18783FAF0055E18B /* UIKit.framework */; };
 		E7166AD418783FAF0055E18B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E7166AD218783FAF0055E18B /* InfoPlist.strings */; };
-		E7166AD618783FAF0055E18B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E7166AD518783FAF0055E18B /* main.m */; };
+		E7166AD618783FAF0055E18B /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = E7166AD518783FAF0055E18B /* main.mm */; };
 		E7166ADA18783FAF0055E18B /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = E7166AD918783FAF0055E18B /* AppDelegate.mm */; };
-		E7166AE018783FAF0055E18B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7166ADF18783FAF0055E18B /* ViewController.m */; };
 		E7166AE218783FAF0055E18B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7166AE118783FAF0055E18B /* Images.xcassets */; };
 		E7166AE918783FAF0055E18B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7166AE818783FAF0055E18B /* XCTest.framework */; };
 		E7166AEA18783FAF0055E18B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7166AC918783FAE0055E18B /* Foundation.framework */; };
@@ -35,18 +37,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18F4E57918786C5F0097622E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		18F4E57B18786C650097622E /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		18F4E57D18786DB40097622E /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		18F4E57E18786DB40097622E /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E7166AC618783FAE0055E18B /* HelloArrow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloArrow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7166AC918783FAE0055E18B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E7166ACB18783FAE0055E18B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		E7166ACD18783FAF0055E18B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E7166AD118783FAF0055E18B /* HelloArrow-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HelloArrow-Info.plist"; sourceTree = "<group>"; };
 		E7166AD318783FAF0055E18B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E7166AD518783FAF0055E18B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E7166AD518783FAF0055E18B /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
 		E7166AD718783FAF0055E18B /* HelloArrow-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelloArrow-Prefix.pch"; sourceTree = "<group>"; };
 		E7166AD818783FAF0055E18B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E7166AD918783FAF0055E18B /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
-		E7166ADE18783FAF0055E18B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E7166ADF18783FAF0055E18B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E7166AE118783FAF0055E18B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E7166AE718783FAF0055E18B /* HelloArrowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloArrowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7166AE818783FAF0055E18B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -55,7 +59,7 @@
 		E7166AF418783FAF0055E18B /* HelloArrowTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloArrowTests.m; sourceTree = "<group>"; };
 		E7166B04187840670055E18B /* GLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLView.h; sourceTree = "<group>"; };
 		E7166B05187840670055E18B /* GLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GLView.mm; sourceTree = "<group>"; };
-		E7166B06187840670055E18B /* IRenderingEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRenderingEngine.h; sourceTree = "<group>"; };
+		E7166B06187840670055E18B /* IRenderingEngine.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IRenderingEngine.hpp; sourceTree = "<group>"; };
 		E7166B07187840670055E18B /* RenderingEngine1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RenderingEngine1.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,6 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18F4E57C18786C650097622E /* OpenGLES.framework in Frameworks */,
+				18F4E57A18786C5F0097622E /* QuartzCore.framework in Frameworks */,
 				E7166ACC18783FAE0055E18B /* CoreGraphics.framework in Frameworks */,
 				E7166ACE18783FAF0055E18B /* UIKit.framework in Frameworks */,
 				E7166ACA18783FAE0055E18B /* Foundation.framework in Frameworks */,
@@ -105,6 +111,8 @@
 		E7166AC818783FAE0055E18B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				18F4E57B18786C650097622E /* OpenGLES.framework */,
+				18F4E57918786C5F0097622E /* QuartzCore.framework */,
 				E7166AC918783FAE0055E18B /* Foundation.framework */,
 				E7166ACB18783FAE0055E18B /* CoreGraphics.framework */,
 				E7166ACD18783FAF0055E18B /* UIKit.framework */,
@@ -116,14 +124,14 @@
 		E7166ACF18783FAF0055E18B /* HelloArrow */ = {
 			isa = PBXGroup;
 			children = (
+				18F4E57D18786DB40097622E /* ViewController.h */,
+				18F4E57E18786DB40097622E /* ViewController.m */,
 				E7166B04187840670055E18B /* GLView.h */,
 				E7166B05187840670055E18B /* GLView.mm */,
-				E7166B06187840670055E18B /* IRenderingEngine.h */,
+				E7166B06187840670055E18B /* IRenderingEngine.hpp */,
 				E7166B07187840670055E18B /* RenderingEngine1.cpp */,
 				E7166AD818783FAF0055E18B /* AppDelegate.h */,
 				E7166AD918783FAF0055E18B /* AppDelegate.mm */,
-				E7166ADE18783FAF0055E18B /* ViewController.h */,
-				E7166ADF18783FAF0055E18B /* ViewController.m */,
 				E7166AE118783FAF0055E18B /* Images.xcassets */,
 				E7166AD018783FAF0055E18B /* Supporting Files */,
 			);
@@ -135,7 +143,7 @@
 			children = (
 				E7166AD118783FAF0055E18B /* HelloArrow-Info.plist */,
 				E7166AD218783FAF0055E18B /* InfoPlist.strings */,
-				E7166AD518783FAF0055E18B /* main.m */,
+				E7166AD518783FAF0055E18B /* main.mm */,
 				E7166AD718783FAF0055E18B /* HelloArrow-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -255,11 +263,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7166AE018783FAF0055E18B /* ViewController.m in Sources */,
 				E7166ADA18783FAF0055E18B /* AppDelegate.mm in Sources */,
-				E7166AD618783FAF0055E18B /* main.m in Sources */,
+				E7166AD618783FAF0055E18B /* main.mm in Sources */,
 				E7166B08187840670055E18B /* GLView.mm in Sources */,
 				E7166B09187840670055E18B /* RenderingEngine1.cpp in Sources */,
+				18F4E57F18786DB40097622E /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +468,7 @@
 				E7166AFA18783FAF0055E18B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E7166AFB18783FAF0055E18B /* Build configuration list for PBXNativeTarget "HelloArrowTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +477,7 @@
 				E7166AFD18783FAF0055E18B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
