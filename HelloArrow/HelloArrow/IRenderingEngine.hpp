@@ -9,6 +9,7 @@
 #ifndef HelloArrow_IRenderingEngine_h
 #define HelloArrow_IRenderingEngine_h
 
+// Physical orientation of a handheld device, equivalent to UIDeviceOrientation
 enum DeviceOrientation {
     DeviceOrientationUnknown,
     DeviceOrientationPortrait,
@@ -19,8 +20,11 @@ enum DeviceOrientation {
     DeviceOrientationFaceDown,
 };
 
+// Create an instance of the renderer and set up various OpenGL state.
 struct IRenderingEngine* CreateRenderer1();
+struct IRenderingEngine* CreateRenderer2();
 
+// Interface to the OpenGL ES renderer; consumed by GLView.
 struct IRenderingEngine {
     virtual void Initialize(int width, int height) = 0;
     virtual void Render() const = 0;

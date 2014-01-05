@@ -24,6 +24,8 @@
 		E7166AF518783FAF0055E18B /* HelloArrowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E7166AF418783FAF0055E18B /* HelloArrowTests.m */; };
 		E7166B08187840670055E18B /* GLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = E7166B05187840670055E18B /* GLView.mm */; };
 		E7166B09187840670055E18B /* RenderingEngine1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E7166B07187840670055E18B /* RenderingEngine1.cpp */; };
+		E7B10053187918F800D70DBA /* Simple.frag in Sources */ = {isa = PBXBuildFile; fileRef = E7B10052187918F800D70DBA /* Simple.frag */; };
+		E7B100551879212600D70DBA /* RenderingEngine2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E7B100541879212600D70DBA /* RenderingEngine2.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,9 @@
 		E7166B05187840670055E18B /* GLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GLView.mm; sourceTree = "<group>"; };
 		E7166B06187840670055E18B /* IRenderingEngine.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IRenderingEngine.hpp; sourceTree = "<group>"; };
 		E7166B07187840670055E18B /* RenderingEngine1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RenderingEngine1.cpp; sourceTree = "<group>"; };
+		E7B10051187918EA00D70DBA /* Simple.vert */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Simple.vert; sourceTree = "<group>"; };
+		E7B10052187918F800D70DBA /* Simple.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Simple.frag; sourceTree = "<group>"; };
+		E7B100541879212600D70DBA /* RenderingEngine2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RenderingEngine2.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,12 +129,14 @@
 		E7166ACF18783FAF0055E18B /* HelloArrow */ = {
 			isa = PBXGroup;
 			children = (
+				E7B100501879188C00D70DBA /* Shaders */,
 				18F4E57D18786DB40097622E /* ViewController.h */,
 				18F4E57E18786DB40097622E /* ViewController.m */,
 				E7166B04187840670055E18B /* GLView.h */,
 				E7166B05187840670055E18B /* GLView.mm */,
 				E7166B06187840670055E18B /* IRenderingEngine.hpp */,
 				E7166B07187840670055E18B /* RenderingEngine1.cpp */,
+				E7B100541879212600D70DBA /* RenderingEngine2.cpp */,
 				E7166AD818783FAF0055E18B /* AppDelegate.h */,
 				E7166AD918783FAF0055E18B /* AppDelegate.mm */,
 				E7166AE118783FAF0055E18B /* Images.xcassets */,
@@ -165,6 +172,15 @@
 				E7166AF118783FAF0055E18B /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E7B100501879188C00D70DBA /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				E7B10051187918EA00D70DBA /* Simple.vert */,
+				E7B10052187918F800D70DBA /* Simple.frag */,
+			);
+			name = Shaders;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,10 +280,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7166ADA18783FAF0055E18B /* AppDelegate.mm in Sources */,
+				E7B10053187918F800D70DBA /* Simple.frag in Sources */,
 				E7166AD618783FAF0055E18B /* main.mm in Sources */,
 				E7166B08187840670055E18B /* GLView.mm in Sources */,
 				E7166B09187840670055E18B /* RenderingEngine1.cpp in Sources */,
 				18F4E57F18786DB40097622E /* ViewController.m in Sources */,
+				E7B100551879212600D70DBA /* RenderingEngine2.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
