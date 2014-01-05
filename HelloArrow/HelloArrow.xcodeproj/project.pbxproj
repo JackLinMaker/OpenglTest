@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		18F4E57A18786C5F0097622E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F4E57918786C5F0097622E /* QuartzCore.framework */; };
 		18F4E57C18786C650097622E /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F4E57B18786C650097622E /* OpenGLES.framework */; };
-		18F4E57F18786DB40097622E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F4E57E18786DB40097622E /* ViewController.m */; };
 		E7166ACA18783FAE0055E18B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7166AC918783FAE0055E18B /* Foundation.framework */; };
 		E7166ACC18783FAE0055E18B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7166ACB18783FAE0055E18B /* CoreGraphics.framework */; };
 		E7166ACE18783FAF0055E18B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7166ACD18783FAF0055E18B /* UIKit.framework */; };
@@ -41,8 +40,6 @@
 /* Begin PBXFileReference section */
 		18F4E57918786C5F0097622E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		18F4E57B18786C650097622E /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
-		18F4E57D18786DB40097622E /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		18F4E57E18786DB40097622E /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E7166AC618783FAE0055E18B /* HelloArrow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloArrow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7166AC918783FAE0055E18B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E7166ACB18783FAE0055E18B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -130,8 +127,6 @@
 			isa = PBXGroup;
 			children = (
 				E7B100501879188C00D70DBA /* Shaders */,
-				18F4E57D18786DB40097622E /* ViewController.h */,
-				18F4E57E18786DB40097622E /* ViewController.m */,
 				E7166B04187840670055E18B /* GLView.h */,
 				E7166B05187840670055E18B /* GLView.mm */,
 				E7166B06187840670055E18B /* IRenderingEngine.hpp */,
@@ -284,7 +279,6 @@
 				E7166AD618783FAF0055E18B /* main.mm in Sources */,
 				E7166B08187840670055E18B /* GLView.mm in Sources */,
 				E7166B09187840670055E18B /* RenderingEngine1.cpp in Sources */,
-				18F4E57F18786DB40097622E /* ViewController.m in Sources */,
 				E7B100551879212600D70DBA /* RenderingEngine2.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
